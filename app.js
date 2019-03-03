@@ -19,7 +19,7 @@ courses = [
     { name: "Physics", code: "PHY1001", status: "Active" },
     { name: "Circuit Theory", code: "ECM1001", status: "Active" },
     { name: "Web of Things", code: "ECM1004", status: "Inactive" },
-    { name: "Analog Electronics", code: "ECE2002", status: "Active" },
+    { name: "Analog Electronics", code: "ECE2022", status: "Active" },
     { name: "Computer Vision", code: "CSE3017", status: "Active" },
     { name: "Machine Learning", code: "ECM2002", status: "Active" },
     { name: "TARP", code: "ECM3999", status: "Inactive" }
@@ -46,6 +46,8 @@ studentsEnrolled = [
     { coursecode:"ECM2002", enrollers:["16BLC1001","16BLC1003","16BLC1005","16BLC1002","16BLC1006"]},
     { coursecode:"CSE3017", enrollers:["16BLC1001","16BLC1003","16BLC1005","16BLC1004","16BLC1006"]},
     { coursecode:"ECE2022", enrollers:["16BLC1004","16BLC1006"]},
+    { coursecode:"PHY1001", enrollers:["16BLC1004"]},
+    { coursecode:"ECM3999", enrollers:["16BLC1004","16BLC1006"]},
 ];
 
 /* app.locals.studentsEnrolled = [
