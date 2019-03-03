@@ -1,0 +1,20 @@
+h2 Details of all offered courses
+p#table
+script.
+  var jsonobj=JSON.parse(courselist)
+  if (!jsonobj.length)
+    return
+  var tbl = document.createElement("table")
+  var hdr = tbl.insertRow()
+  for (var prop in jsonobj[0]) {
+    hdr.appendChild(document.createElement("th")).innerText = prop
+  }
+  jsonobj.reduce((t, x) => {
+    var row = t.insertRow()
+    for (var prop in x) {
+        row.insertCell().innerText = x[prop]
+    }
+    return t
+  }, tbl)
+  out.appendChild(document.createElement("p"))
+  out.appendChild(tbl)

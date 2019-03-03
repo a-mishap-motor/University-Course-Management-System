@@ -1,0 +1,11 @@
+h2 Enroll in a Course
+br
+h3 Hello, #{regno}
+p To view a list of available courses 
+  a(href='/student/allcourses') click here
+br
+form(action='/student/enrollsuccess', method='POST')
+  // make a dropdown list here
+  p Enter the new course code 
+    input(type='text', name='enrollRequest')
+    input(type='submit', name='submit')

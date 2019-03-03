@@ -1,0 +1,11 @@
+h2 Un-enroll from a Course
+|
+h3 Hello, #{regno}
+p To view a list of registered courses 
+  a(href='/student/showenrolled') click here
+br
+form(action='/student/unenrollsuccess', method='POST')
+  // make a dropdown list here
+  p Enter the course code 
+    input(type='text', name='unenrollRequest')
+    input(type='submit', name='submit')
