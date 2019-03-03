@@ -2,41 +2,16 @@ title UCMS Home
 h1(style='text-align: center') University Course Management System (UCMS)
 br
 // single form for both faculty and student logins?
-form(action='/student', method='POST', onsubmit='validate()')
+form(action='/student', method='POST')
   fieldset(style='text-align: center;')
     legend Student Login
     br
-    |             Registration Number: 
+    | Registration Number: 
     br
     input#regno(type='text', name='regno')
     br
-    |             Password: 
+    | Password: 
     br
-    input#pwd(type='text', name='pwd')
+    input#pwd(type='password', name='pwd')
     br
     input(type='submit', name='submit', value='Submit')
-  //
-    <fieldset style="float: right;">
-    <legend>Faculty Login</legend>
-    Registration Number: <br>
-    <input id="regno" placeholder="Enter Registration Number" type="text" name="regno" /><br/>
-    Password: <br>
-    <input id="pwd" type="text" placeholder="Enter Password" name="pwd" /><br/>
-    <input type="submit" name="submit" value="Submit" />
-    </fieldset>
-script.
-  function validate() {
-  // let regno = document.getElementById("regno");
-  // let pwd = document.getElementById("pwd");
-  // let regex = new RegExp("[1-9][0-9][A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9]");
-  // let regex = regno.match("[1-9][0-9][A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9]");
-  // if (regex.test(regno) && pwd.length >= 5) {
-  //     console.log("Matched");
-  //     alert("Matched");
-  //     return true;
-  // } else {
-  //     console.log("Not Matched");
-  //     alert("Not Matched");
-  //     return true;
-  // }
-  }
